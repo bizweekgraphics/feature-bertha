@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #e1f4fd;
 }
 
 
@@ -83,10 +84,6 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.mobile-video {
-  display: none;
-}
-
 .content_wrapper {
   display: inline;
 }
@@ -136,61 +133,8 @@ h1 {
   color: #999;
 }
 
-.video-frame {
-  width: 800px; 
-  height: 450px;
-}
-
 #more {
   margin: 20px auto 48px;
-}
-
-.bio-module {
-  width: 90%;
-  margin: 60px auto 40px;
-  display: block;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.bio {
-  width: 18%;
-  padding: 0 30px;
-  border-right: 1px solid #333;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  min-height: 600px;
-}
-
-.bio img {
-  width: 90%;
-}
-
-.bio p {
-  font-family: 'HaasText', Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-size: 14px;
-}
-
-.bio .bold {
-  font-family: 'HaasTextBold', Helvetica, Arial, sans-serif;
-  color: #dc08f8;
-}
-
-.bio .name {
-  font-family: 'HaasTextBold';
-  font-size: 21px;
-  color: #dc08f8;
-}
-
-.bio .song {
-  font-family: 'HaasTextBold';
-  font-size: 18px;
-}
-
-.bio.last {
-  border-right: none;
 }
 
 .recirc{
@@ -272,19 +216,6 @@ h1 {
     margin: 0 auto;
   }
 
-  .bio-module {
-    width: 100%;
-  }
-
-  .bio {
-    width: 16%;
-    padding: 0 30px;
-  }
-
-  .video-frame {
-    width: 760px; 
-    height: 428px;
-  }
 }
 
 @media screen and (max-width: 760px) {
@@ -321,30 +252,6 @@ h1 {
 
   .img-wrapper img {
     width: 100%;
-  }
-
-  .bio-module {
-    margin: 40px auto;
-  }
-
-  .bio {
-    width: 90%;
-    padding: 0 30px;
-    border-bottom: 1px solid #333;
-    border-right: none;
-    display: block;
-    min-height: 0;
-  }
-
-  .bio img {
-    width: 30%;
-    float: left;
-    padding: 0 15px 10px 0;
-  }
-
-  .video-frame {
-    width: 320px; 
-    height: 180px;
   }
 
 }
