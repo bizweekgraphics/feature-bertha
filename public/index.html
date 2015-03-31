@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="http://www.bloomberg.com/graphics/assets/img/favicon-32x32.png" type="image/x-icon">
+        <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
 
         <!-- meta tags for this project -->
         <title>Stuck In Seattle | Bloomberg Business - Business, Financial &amp; Economic News, Stock Quotes</title>
@@ -25,12 +25,12 @@
         <meta property="og:longTitle" content="twitter share language">
         <!-- What is the share-able image -->
         <!-- Image aspect ratio: 1.91:1 Image Dimensions: 1200x630px -->
-        <meta property="og:image" content="bloomberg.com/graphics/YOUR-SLUG-HERE/img/IMAGE-FILE"/>
+        <meta property="og:image" content="bloomberg.com/graphics/2015-bertha/img/IMAGE-FILE"/>
         <!-- These two can be the dek text -->
         <meta property="og:description" content=""/>
         <meta name="description" content="">
         <meta name="keywords" content="Bloomberg Business"/>
-        <meta property="og:url" content="http://www.bloomberg.com/graphics/2015-swedens-global-pop-music-factory/"/>
+        <meta property="og:url" content="http://www.bloomberg.com/graphics/2015-bertha/"/>
         <!--  -->
         <!-- / meta tags for this project -->
         <!--  -->
@@ -48,7 +48,7 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body id="skrollr-body">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -104,12 +104,12 @@
 
         <div class="clearboth"></div>
 
-        <div id="percentread" data-0="width:0%" data-end="width:100%"></div>
+        <div id="percentread" data-0="width:0%" data-end="width:83%"></div>
 
-        <img id="emoji1" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-1.png">
-        <img id="emoji2" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-2.png">
-        <img id="emoji3" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-3.png">
-        <img id="emoji4" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-4.png">
+        <img id="emoji1" class="progress-bertha" data-0="left:-10%;" data-end="left:83%;" src="img/emoji-progress-1.png">
+        <img id="emoji2" class="progress-bertha" data-0="left:-10%;" data-end="left:83%;" src="img/emoji-progress-2.png">
+        <img id="emoji3" class="progress-bertha" data-0="left:-10%;" data-end="left:83%;" src="img/emoji-progress-3.png">
+        <img id="emoji4" class="progress-bertha" data-0="left:-10%;" data-end="left:83%;" src="img/emoji-progress-4.png">
 
         <section class="bannerbox">
           <div class="container bannerad"></div>
@@ -124,18 +124,20 @@
         <div class="hed">
         <h1>Stuck In Seattle</h1>
         </div>
-        <div class="dek">The world’s largest tunneling machine is broken 120 feet underground. Can it be fixed? <br /> <span class="byline"> By Karen Weise</span></div>
+        
       </div>
 
 <!--       <div id="art"> -->
-      <div id="lede1" class="hero" data-0="bottom:0;" data-1000="bottom:-500px;"><img src="img/lede-01.jpg"></div>
-      <div id="lede2" class="hero" data-0="bottom:-120px;" data-1000="bottom:100px;"><img src="img/lede-02.png"></div>
-      <div id="lede3" class="hero" data-0="bottom:-100px;" data-1000="bottom:100px;"><img src="img/lede-03.png"></div>
+      <div id="lede1" class="hero" data-0="top:164px;" data-1500="top:500px;"><img src="img/lede-01.jpg"></div>
+      <div id="lede2" class="hero" data-0="top:240px;" data-1500="top:0px;"><img src="img/lede-02.png"></div>
+      <div id="lede3" class="hero" data-0="top:240px;" data-1500="top:0px;"><img src="img/lede-03.png"></div>
 <!--       </div> -->
 
     </header>
 
     <div id="main">
+
+      <div class="dek" data-0="opacity:0; top:55%;" data-400="opacity:1; top: 75%;">The world’s largest tunneling machine is broken 120 feet underground. Can it be fixed? <br /> <span class="byline"> By Karen Weise</span></div>
 
     <section class="text-col clearfix">
       <div class="content-wrapper">
@@ -157,7 +159,8 @@
 
     <!-- PHOTO -->
 
-    <div class="inline_media reveal slideInRight">
+    <div class="inline_media">
+      <img class="emoji reveal rotateIn" src="img/bertha-emoji-1.png">
       <div class="img-wrapper">
         <img src="img/bertha-tunnel.jpg" alt="" />
         <div class="img-caption">
@@ -185,11 +188,6 @@
     </div>
       </section>
 
-      <!-- BIO MODULE 2 -->
-
-    <section class="bio-module">
-
-    </section>
 
     <section class="text-col clearfix">
       <div class="content-wrapper">    
@@ -209,7 +207,8 @@
 
     <!-- PHOTO -->
 
-    <div class="inline_media reveal slideInRight">
+    <div class="inline_media">
+      <img class="emoji reveal rotateIn" src="img/bertha-emoji-3.png">
       <div class="img-wrapper">
         <img src="img/bertha-repair.jpg" alt="" />
         <div class="img-caption">
@@ -235,6 +234,12 @@
 
         <p>In January 2009, then-Governor Christine Gregoire, then-King County Executive Ron Sims, and then-Seattle Mayor Gregory Nickels publicly threw their support behind the deep-bore tunnel. Republican legislators, largely from suburban and rural districts, had little interest in funding a risky tunnel for the city, so Ed Murray, now ­Seattle’s mayor but in the legislature at the time, brokered a compromise: The state would pay $2 billion and the rest would be covered largely by tolls, the port, and the federal government. If the tunnel ran over budget, the bill read, the extra costs “shall be borne by property owners in the Seattle area who benefit” from the tunnel. Clark Williams-Derry, a researcher at Sightline Institute, an environmental think tank, says it amounted to the statehouse saying: “If Seattle wants its latte-filled tunnel, they can build it themselves.”</p>
 
+        <div class="img_right">
+          <div class="img-wrapper">
+            <img style="border:none;" src="img/bertha-boat.jpg" alt="" />
+          </div>
+        </div>
+
 
         <!-- BREAK? -->
 
@@ -243,19 +248,6 @@
 
         <p>Tunneling machines like firm, consistent conditions across the drilling face. “The risk is very much associated with how you expect the ground conditions to vary,” says Andrew Whittle, a soils expert who heads Massachusetts Institute of Technology’s civil engineering department. The wider the tunnel, the more likely it is for one part of the drill to encounter little resistance while another meets tougher stuff. Initially the Seattle plan called for two smaller bores, one in each direction, but that was too costly. Making one tunnel with two levels of traffic was cheaper but meant pushing the diameter to an unprecedented 57 feet.</p>
 
-        </div>
-    </section>
-
-    <!-- PHOTO -->
-
-    <div class="inline_media reveal slideInRight">
-      <div class="img-wrapper">
-        <img style="border:none;" src="img/bertha-boat.jpg" alt="" />
-      </div>
-    </div>
-
-    <section class="text-col clearfix">
-      <div class="content-wrapper">
 
 
         <p>The Washington State Department of Transportation’s consultants identified eight different ground conditions in the tunnel’s path, including abrasive soil that can wear down a machine’s teeth; clay-like slurry; and boulders up to eight feet in diameter, deposited by glaciers TK,000 years ago. The southernmost stretch of the tunnel runs along Elliott Bay, where water ebbs and flows through the soil with the tides, in a consistency Donegan calls “softer than a milkshake.”</p>
@@ -273,23 +265,16 @@
         </div>
     </section>
 
-        <!-- SAADE PHOTO -->
-
-    <div class="inline_media">
-      <img class="emoji" src="img/bertha-emoji-2.png">
-      <div class="img-wrapper">
-        <img src="img/repair-site.jpg" alt="" />
-        <div class="img-caption">
-          <p class="caption">Photo caption here.</p>
-          <p class="credit">Photographer: Photographer's Name / Bloomberg</p>
-        </div>
-      </div>
-    </div>
-
     <section class="text-col clearfix">
       <div class="content-wrapper">
 
         <p>In early December 2013, after she’d mined about 1,000 feet, Bertha started overheating. Her seals busted, and her teeth clogged with grit and pieces of an eight-inch steel pipe left over from old groundwater tests. She stopped entirely.</p>
+
+        <div class="img_left">
+          <div class="img-wrapper">
+            <img style="border:none;" src="img/bertha-chomp.gif" alt="" />
+          </div>
+        </div>
 
         <p>Why exactly Bertha wasn’t up to the task isn’t clear, at least to the public. WSDOT has said it’s STP’s problem if Bertha couldn’t handle the ground conditions it laid out in the contract. But STP has already submitted a change order saying the conditions differed from what WSDOT told them. The question of Bertha’s bust is as much a financial question as an engineering one, to be challenged through a dispute review board and, potentially, in court. “The lawyers will have a field day with this,” Donegan says. </p>
 
@@ -305,11 +290,6 @@
       </div>
     </section>
 
-        <!-- BIO MODULE 3 -->
-
-    <section class="bio-module">
-      
-    </section>
 
     <section class="text-col clearfix">
       <div class="content-wrapper">
@@ -324,84 +304,10 @@
 
         <!--END OF BERTHA COPY RIGHT NOW -->
 
-        <p>Pop stars and record labels now spend a lot of time trying to get on Björkman’s good side. But Melfest hasn’t always had that pull.</p>
-
-        <p>“I saw the show 2001 in Malmö and it was a disaster,” says Stockselius, the former SVT executive. The show consisted mostly of no-name artists singing traditional Swedish folk-dance music. “Even though the ratings were OK, I could really see this patient was going to die,” he says.</p>
-
         </div>
     </section>
 
-        <!-- BJORKMAN PHOTO -->
 
-        <div class="inline_media reveal slideInRight">
-      <div class="img-wrapper">
-        <img src="img/bjorkman.jpg" alt="" />
-        <div class="img-caption">
-          <p class="caption">Christer Björkman</p>
-          <p class="credit">Photographer: Johan Jeppsson / Bloomberg</p>
-        </div>
-      </div>
-    </div>
-
-    <section class="text-col clearfix">
-      <div class="content-wrapper">
-
-        <p>When Stockselius took charge the following year, he decided to overhaul the program, drawing inspiration from professional sports and recasting Melfest as a tournament like the World Cup. He added four semi-finals and the second-chance round, and staged them on consecutive weekends in Växjö, Norrköping, Sundsvall, Falun and Stockholm to get the whole country involved. On the night of the final, held in Stockholm’s Globe Arena, more than 40% percent of the population watched Afro-dite, a trio of black singers, shimmy to victory.</p>
-
-        <p>On Thursday morning, Björkman stands on the stage of Stockholm’s Friends Arena. Wrinkled and hip in black and gray, he looks like the reformed pop star he is. One by one, the 12 finalists march into a sunburst of flashing camera bulbs. They stay there until Björkman tells them to move. </p>
-
-        <p>By Friday, the Swedish media are giving Melodifestivalen front-page billing. <em>Expressen</em> publishes an image of Saade and Zelmerlöw poised to hug, or choke, each other. It describes Saade as “cocky” and Zelmerlöw as “a mother’s dream.” </p>
-
-
-        <p>Another article quotes Zelmerlöw defending his songwriters. “Heroes,” it seems, is reminiscent of the French DJ and producer David Guetta’s song “Lovers on the Sun,” so reminiscent that Zelmerlöw’s songwriters are accused of ripping it off. They deny it. Earlier in the week, his rival Saade magnanimously pooh-poohed the charges, suggesting merely that the issue could taint Zelmerlöw, and all of Sweden, if the song advanced to Eurovision. </p>
-
-        <p>The bookies take Fjällgren, the reindeer shepherd, as an outside bet against Zelmerlöw, at 11 to 2.</p>
-
-        <p>The night of the show, more than 30,000 people file into Friends Arena. They’re dressed to dazzle, with sequined hats and pink boas. Another 3.8 million Swedes are watching at home. Zelmerlöw’s “Heroes” sits at No. 2 on the Swedish singles charts, just behind Rihanna and ahead of Ellie Goulding. On the album charts, Fjällgren’s 2014 release “Goeksegh” has climbed back to No. 2, just behind Sam Smith and ahead of Ariana Grande, Maroon 5 and Madonna.</p>
-
-        <p>Saade, dressed in white from head to toe, looks like a louche waiter, and takes flight in a spaceship that shoots pyrotechnics. Zelmerlöw, wearing a top just tight enough to show the curves of his biceps, bends and poses dramatically while stick figures, digitally projected behind him, mimic his moves. Fjällgren’s performance oozes the same spirituality that brought him to the final. During the bridge, as fake snow falls around him, he kneels, looks straight into the camera and says, “I am free. Sweden, this <em>joik</em> is for you.”</p>
-
-      </div>
-    </section>
-
-        <!-- SAADE VIDEO -->
-
-    <div class="inline_media video reveal slideInRight">
-      <div class="img-wrapper">
-        <iframe class="video-frame" src="https://www.youtube.com/embed/_jdYpbZ4oQE?start=55&end=71&version=3" frameborder="0" allowfullscreen></iframe>
-        <!-- <img src="img/zelmerlow.jpg" alt="" /> -->
-        <div class="img-caption">
-          <p class="caption">Eric Saade performing the song "Sting"</p>
-          <p class="credit">Watch the full performance on YouTube >></p>
-        </div>
-      </div>
-    </div>
-
-    <section class="text-col clearfix">
-      <div class="content-wrapper">
-
-        <p>An international jury, consisting of music professionals from 11 countries, including Armenia, Estonia, and Malta, accounts for half the final score. As they announce their verdicts one by one, Zelmerlöw builds up an enormous lead, with nine of the 11 juries ranking him first. The United Kingdom throws its support behind Fjällgren, while Israel goes for Mariette, a singer who, in 2010, won the prestigious Homo of the Year ((THAT’S THE NAME?)) award from QX Magazine. Members of the public can vote a maximum of 80 times from each telephone subscription, at $1.40 a vote, most of the proceeds going to charity.</p>
-
-    
-
-        <p>By the end of the evening, SVT has received more than 1.5 million votes. A staggering 545,601 of them, or 35 percent, go to Zelmerlöw, who wins in a landslide. Fjällgren rakes in 19 percent to come in second, while Saade musters only 6 percent. He finishes fifth, behind the aging crooner Hasse Andersson.</p>
-
-        <p>Fjällgren looks on from just a few feet away as photographers snap Zelmerlöw raising the winner’s trophy on stage.</p>
-
-        <p>“This is a little too hard for me,” Fjällgren says. “I long for nature and all animals. I am rootless if I'm not in the mountains, and then I'm lost. I can be away for some time, but then I need to return home.”</p>
-
-        <p>As part of his Melodifestivalen preparations, Zelmerlöw has cut down on alcohol and gone on a special diet of cottage cheese and berries. He’s added eight pounds of muscle. He celebrates by eating a pastry backstage.</p>
-
-        <p>Now the real work now begins. All 40 countries competing at Eurovision 2015 have selected their artists and songs, and the campaign—replete with glossy music videos, media interviews, and concerts across Europe—is in full swing. Latvia has elected to send Aminata Savadogo, perhaps the only singer in Riga who can trace her roots to the African nation of Burkina Faso. In Finland, tele-voters chose Pertti Kurikan Nimipäivä, a heavy metal band whose members all have Down syndrome. In Poland, the state broadcaster bypassed a national selection contest and instead executives chose to send Monika Kuszynska, a songstress who was left paraplegic following a car accident in 2006. Like so many others, she’ll sing about love.</p>
-
-        <p>Zelmerlöw, the son of a professor and a surgeon, may lack their dramatic personal stories, but he comes with a pop-obsessed nation behind him and a mainstream song that sticks in the head like a hatchet. A few days after the show, and for the first time since 2007, he reaches No. 1, leaving Rihanna, Kanye West and Paul McCartney behind.</p>
-
-        </div>
-      </section>
-
-        
-
-        
 
 
     <!-- RECIRC -->
@@ -426,7 +332,7 @@
 </div>
 
 
-        <ul class="t-hide bbg-recirculator index-page__items index-page__top-items"></ul>
+        <!-- <ul class="t-hide bbg-recirculator index-page__items index-page__top-items"></ul> -->
 
 
         <!-- Optional Scripts-->
@@ -491,26 +397,26 @@
         <script src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script>
-          // wow = new WOW(
-          // {
-          //   boxClass:   'reveal',
-          //   animateClass: 'animated',
-          //   offset:     300,
-          //   mobile: false,
-          //   callback:   function(box) {
-          //   }
-          // }
-          // );
-          // wow.init();
+          wow = new WOW(
+          {
+            boxClass:   'reveal',
+            animateClass: 'animated',
+            offset:     300,
+            mobile: false,
+            callback:   function(box) {
+            }
+          }
+          );
+          wow.init();
 
           var s = skrollr.init();
 
           $(window).bind('scroll', function(){
-            if($(this).scrollTop() > 3500) {
+            if(($(this).scrollTop() > 3000) && ($(this).scrollTop() < 6000)) {
                 $("#emoji1, #emoji3, #emoji4").hide();
                 $("#emoji2").show();
             }
-            else if($(this).scrollTop() > 6000) {
+            else if(($(this).scrollTop() > 6000) && ($(this).scrollTop() < 9000)) {
                 $("#emoji1, #emoji2, #emoji4").hide();
                 $("#emoji3").show();
             }
@@ -527,6 +433,17 @@
           $(document).ready(function(){        
             $("#emoji2, #emoji3, #emoji4").hide();
           });
+
+          if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+          var s = skrollr.init({
+              render: function(data) {
+                 $('#offset').text(data.curTop);
+           }
+           });
+      }
+    else {
+          $("body").addClass("no-skrollr")
+        }
 
       </script>
     </body>
