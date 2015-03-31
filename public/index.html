@@ -18,9 +18,9 @@
         <link rel="icon" href="http://www.bloomberg.com/graphics/assets/img/favicon-32x32.png" type="image/x-icon">
 
         <!-- meta tags for this project -->
-        <title>The Very Stuck Tunneling Machine | Bloomberg Business - Business, Financial &amp; Economic News, Stock Quotes</title>
+        <title>Stuck In Seattle | Bloomberg Business - Business, Financial &amp; Economic News, Stock Quotes</title>
         <meta property="og:site_name" content="Bloomberg.com"/>
-        <meta property="og:title" content="This Is How Sweden's Global Pop Music Factory Works">
+        <meta property="og:title" content="Stuck In Seattle">
         <!-- What is the tweet / share statement? -->
         <meta property="og:longTitle" content="twitter share language">
         <!-- What is the share-able image -->
@@ -106,7 +106,10 @@
 
         <div id="percentread" data-0="width:0%" data-end="width:100%"></div>
 
-        <img id="emoji" data-0="left:0%;" data-end="left:100%;" src="img/bertha-emoji-1.png">
+        <img id="emoji1" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-1.png">
+        <img id="emoji2" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-2.png">
+        <img id="emoji3" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-3.png">
+        <img id="emoji4" class="progress-bertha" data-0="left:0%;" data-end="left:100%;" src="img/emoji-progress-4.png">
 
         <section class="bannerbox">
           <div class="container bannerad"></div>
@@ -115,15 +118,21 @@
 
           <div id="container">
 
-  <header>
-    
-      <img class="hero" src="img/lede-illo.jpg">
+    <header>
+
       <div class="lede-content">
         <div class="hed">
-        <h1>The Very Stuck Tunneling Machine</h1>
+        <h1>Stuck In Seattle</h1>
         </div>
-        <div class="dek">What will Seattle do with the world’s largest drilling device, broken and buried 120 feet underground? <br /> <span class="byline"> By Karen Weise</span></div>
+        <div class="dek">The world’s largest tunneling machine is broken 120 feet underground. Can it be fixed? <br /> <span class="byline"> By Karen Weise</span></div>
       </div>
+
+<!--       <div id="art"> -->
+      <div id="lede1" class="hero" data-0="bottom:0;" data-1000="bottom:-500px;"><img src="img/lede-01.jpg"></div>
+      <div id="lede2" class="hero" data-0="bottom:-120px;" data-1000="bottom:100px;"><img src="img/lede-02.png"></div>
+      <div id="lede3" class="hero" data-0="bottom:-100px;" data-1000="bottom:100px;"><img src="img/lede-03.png"></div>
+<!--       </div> -->
+
     </header>
 
     <div id="main">
@@ -150,7 +159,7 @@
 
     <div class="inline_media reveal slideInRight">
       <div class="img-wrapper">
-        <img src="img/bertha-01.jpg" alt="" />
+        <img src="img/bertha-tunnel.jpg" alt="" />
         <div class="img-caption">
           <p class="caption">Photo caption here.</p>
           <p class="credit">Photographer: Photographer's Name / Bloomberg</p>
@@ -202,7 +211,7 @@
 
     <div class="inline_media reveal slideInRight">
       <div class="img-wrapper">
-        <img src="img/bertha-tunnel.jpg" alt="" />
+        <img src="img/bertha-repair.jpg" alt="" />
         <div class="img-caption">
           <p class="caption">Photo caption here.</p>
           <p class="credit">Photographer: Photographer's Name / Bloomberg</p>
@@ -266,12 +275,13 @@
 
         <!-- SAADE PHOTO -->
 
-    <div class="inline_media reveal slideInRight">
+    <div class="inline_media">
+      <img class="emoji" src="img/bertha-emoji-2.png">
       <div class="img-wrapper">
-        <img src="img/saade.jpg" alt="" />
+        <img src="img/repair-site.jpg" alt="" />
         <div class="img-caption">
-          <p class="caption">Eric Saade</p>
-          <p class="credit">Photographer: Johan Jeppsson / Bloomberg</p>
+          <p class="caption">Photo caption here.</p>
+          <p class="credit">Photographer: Photographer's Name / Bloomberg</p>
         </div>
       </div>
     </div>
@@ -476,6 +486,8 @@
 
         </script>
 
+
+        <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script>
@@ -492,6 +504,29 @@
           // wow.init();
 
           var s = skrollr.init();
+
+          $(window).bind('scroll', function(){
+            if($(this).scrollTop() > 3500) {
+                $("#emoji1, #emoji3, #emoji4").hide();
+                $("#emoji2").show();
+            }
+            else if($(this).scrollTop() > 6000) {
+                $("#emoji1, #emoji2, #emoji4").hide();
+                $("#emoji3").show();
+            }
+            else if($(this).scrollTop() > 9000) {
+                $("#emoji1, #emoji2, #emoji3").hide();
+                $("#emoji4").show();
+            }
+            else {
+              $("#emoji1").show();
+              $("#emoji2, #emoji3, #emoji4").hide();
+            }
+          });
+          
+          $(document).ready(function(){        
+            $("#emoji2, #emoji3, #emoji4").hide();
+          });
 
       </script>
     </body>
